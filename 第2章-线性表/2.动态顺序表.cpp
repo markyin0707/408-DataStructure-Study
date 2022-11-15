@@ -2,7 +2,7 @@
 #include<stdlib.h>
 #define InitSize 10
 typedef struct{
-    int *data;
+    int *data;      //这里等价int data[];但是cpp不支持未知长度数组，所以只能借助指针实现
     int MaxSize,length;
 }SeqList;
 

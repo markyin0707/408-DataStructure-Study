@@ -11,7 +11,7 @@ bool InitDLinkList(DLinkList &L){
     L=(DNode*)malloc(sizeof(DNode));
     if(L==NULL)
         return false;
-    L->prior=NULL;
+    L->prior=NULL;   //这里指向头节点就是循环双链表的初始化操作
     L->next=NULL;
     return true;
 }
