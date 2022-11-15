@@ -52,7 +52,7 @@ bool InsertPriorNode(LNode *p,int e){
     if(s==NULL)
         return false;
     s->next=p->next;
-    s->next=s;
+    p->next=s;
     s->data=p->data;
     p->data=e;
     return true;
